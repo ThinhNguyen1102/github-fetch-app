@@ -16,7 +16,7 @@ app.use(cors());
 
 app.use("/api/github-fetch", releaseRoute);
 
-app.get("/api/github-fetch", (req, res, next) => {
+app.get("/", (req, res, next) => {
   res.status(200).json({ message: "hello" });
 });
 
