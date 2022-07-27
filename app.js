@@ -16,6 +16,10 @@ app.use(cors());
 
 app.use("/api/github-fetch", releaseRoute);
 
+app.get("/api/github-fetch", (req, res, next) => {
+  res.status(200).json({ message: "hello" });
+});
+
 app.use((error, req, res, next) => {
   const status = error.statusCode || 500;
   const message = error.message;
