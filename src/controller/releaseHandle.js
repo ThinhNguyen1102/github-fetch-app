@@ -1,7 +1,7 @@
 const { Octokit } = require("octokit");
 
 const octokit = new Octokit({
-  auth: "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",
+  auth: "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",
 });
 
 const fetchReleaseFromUrl = async (url, page = 1, releaseList = []) => {
