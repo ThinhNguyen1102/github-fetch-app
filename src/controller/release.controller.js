@@ -1,7 +1,7 @@
 const {
   fetchCommitFromRelease,
   fetchReleaseFromUrl,
-} = require("./releaseHandle");
+} = require("./releaseHandle-axios");
 
 const releaseController = {
   getReleases: async (req, res, next) => {
